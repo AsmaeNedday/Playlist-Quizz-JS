@@ -2,16 +2,16 @@
 This project presents a Playlist and a Quizz using Javascript .
 I worked with the principles of inheritance and prototypes .
 My project is divided into four folders :
-  * __assets__ : includes all images i used in the project
+  * __assets__ : includes all images i used in the project  
   * __medias__ : includes video and audio ressources
   * __Playlist__ : includes all scripts related to the playlist
   * __Quizz__ : includes all scripts related to the quizz
 
-#titrePlaylist:
+#titre Playlist:
 
 it has four objects :
 
-##titreMedia 
+##titre Media 
 
 the object Media has : 
   * __title__ : presents the title of the media : song or movie
@@ -28,18 +28,18 @@ Functions :
   __dislike__ : set opinion to 0
   __OpinionToHTML__ : manage the ui functionnality of like and dilike buttons
 
-##titreMovie
+##titre Movie
 
 the object inherit prototypes and constructor from the object Media 
-it has one more attribute called year .
+it has one more attribute called year  
 it has two more funtions : toHtml and toHtmlMedia to manage the ui functionnality of the element in the playlist depending on his type 
 
-##titreSong
+##titre Song
 
 the object inherit prototypes and constructor from the object Song
-it has one more attribute called artist .
+it has one more attribute called artist 
 it has two more functions that manage the ui functionnality 
 
-##titrePlaylist
+##titre Playlist
   
 
