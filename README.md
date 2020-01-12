@@ -40,7 +40,7 @@ it has two more functions : toHtml and toHtmlMedia to manage the ui functionnali
 
 ## Song
 
-the object inherit prototypes and constructor from the object Song
+the object inherit prototypes and constructor from the object Media
 it has one more attribute called artist 
 it has two more functions toHtml and toHtmlMedia that manage the ui functionnality 
 
@@ -101,7 +101,7 @@ Functions :
 * __addQuestion__ : pushes the question object into the list
 * __getQuestion__ : gets the current question
 * __nextQuestion__ : gets the next question by incrementing questionIndex  and incrementing the score if the answer is correct
-* __finish__ : returns a boolen to indicate if we went through all the elements of the list
+* __finish__ : returns a boolean to indicate if we went through all the elements of the list
 * __showProgress__ : shows the number of  elements of the list we went through
 * __showScore__ : shows the score of the user
 * __randomize__ : randomize the elements of the list 
@@ -126,4 +126,5 @@ The server responds to the request by displaying a welcome message with the regi
  # Visualization  
 
 To start application , open the file Playlist/index.html  in your browser  . A registration form will show up , and after registration you can access to the playlist and to the Quizz via a link .   
-To try the registration via Node.js , you should install node.js , and to place in the directory *Inscription-Node* and run node fnode.js in the command line . You will get the message *Server is running at http:127.0.0.1:1337/ * .You open http:127.0.0.1:1337/  in your browser and a form of registration will show up .
+
+To try the registration via Node.js , you should install Node.js , and to place in the directory *Inscription-Node* and run node fnode.js in the command line . You will get the message *Server is running at http:127.0.0.1:1337/ * .You open http:127.0.0.1:1337/  in your browser and a  registration form will show up .
