@@ -87,7 +87,7 @@ __toHtml__ : adds the html content to the multiple question , the html  represen
 
 the object Blind Question inherit constructor and prototypes from the object Question and it has no additionnal attributes    
 It has one function :   
-__toHtml__ : add the html content to the blind question , it includes the audio or the video tag and its path ,an input text to enter the anwer and a button submit to submit the anwer  
+__toHtml__ : add the html content to the blind question , it includes the iframe tag and the path to the audio ,an input text to enter the answer and a button submit to submit the anwer  
 
 ## Quiz
 
@@ -108,9 +108,7 @@ Functions :
 * __main__ : defines the logic of the game
 
 IN ADDITION TO THAT , there are some scripts to start applications named app.js for both folders .  
-In app.js of the Playlist Folder , we have something additionnal , which is the inscription of the user  
-The user needs to fill in his firstname, lastname and email adress . Some tests of validation of the fields take place in the script .  
-If the registration succeed , the user can access to the playlist .
+
 # Inscription-JS
 
 includes *inscription.js* . This script aims to registrate the user .   
@@ -120,10 +118,12 @@ If the registration succeed , the user can access to the playlist .
 # Inscription-Node  
 
 includes two files : 
-* __fnode.js__ : that includes function *http.createServer(function(req,res) { ... })* to create the web server and function *listen(1337, '127.0.0.1')* to start listening on the port 1337 . 
+* __fnode.js__ : that includes function *http.createServer(function(req,res) { ... })* to create the web server and function *listen(1337, '127.0.0.1')* to start listening on the port 1337 .   
 *req* gives  details about the request sent to the server and *res* is the object that allows sending a response to the request .   
-* __form.html__ : includes the content html of the form written with JQuery , and a function *validate()* to validate the fields before sending the request to the server via AJAX
+* __form.html__ : includes the content html of the form written with JQuery , and a function *validate()* to validate the fields before sending the request to the server via AJAX   .
 The server responds to the request by displaying a welcome message with the registered email 
 
-  
+ # Visualization  
 
+To start application , open the file Playlist/index.html  in your browser  . A registration form will show up , and after registration you can access to the playlist and to the Quizz via a link .   
+To try the registration via Node.js , you should install node.js , and to place in the directory *Inscription-Node* and run node fnode.js in the command line . You will get the message *Server is running at http:127.0.0.1:1337/ * .You open http:127.0.0.1:1337/  in your browser and a form of registration will show up .
