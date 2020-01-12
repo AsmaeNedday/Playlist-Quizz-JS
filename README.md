@@ -123,7 +123,7 @@ includes two files :
 * __form.html__ : includes the content html of the form written with JQuery , and a function *validate()* to validate the fields before sending the request to the server via AJAX   .
 The server responds to the request by displaying a welcome message with the registered email 
 
- # Visualization  
+# Visualization  
 
 To start application , open the file Playlist/index.html  in your browser  . A registration form will show up , and after registration you can access to the playlist and to the Quizz via a link .   
 
