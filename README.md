@@ -7,8 +7,10 @@ My project is divided into four folders :
   * __medias__ : includes video and audio ressources
   * __Playlist__ : includes all scripts related to the playlist
   * __Quizz__ : includes all scripts related to the quizz
+  * __Inscription-JS__ : includes scripts related to registration using javascript only
+  * __Inscription-Node__ :includes scripts related to registration using ajax and Node.js
 
-# Playlist:
+# Playlist
 
 it has four objects :
 
@@ -109,6 +111,19 @@ IN ADDITION TO THAT , there are some scripts to start applications named app.js 
 In app.js of the Playlist Folder , we have something additionnal , which is the inscription of the user  
 The user needs to fill in his firstname, lastname and email adress . Some tests of validation of the fields take place in the script .  
 If the registration succeed , the user can access to the playlist .
+# Inscription-JS
+
+includes *inscription.js* . This script aims to registrate the user .   
+The user needs to fill in his firstname, lastname and email adress . Some tests of validation of the fields take place in the script .  
+If the registration succeed , the user can access to the playlist .
+
+# Inscription-Node  
+
+includes two files : 
+* __fnode.js__ : that includes function *http.createServer(function(req,res) { ... })* to create the web server and function *listen(1337, '127.0.0.1')* to start listening on the port 1337 . 
+*req* gives  details about the request sent to the server and *res* is the object that allows sending a response to the request .   
+* __form.html__ : includes the content html of the form written with JQuery , and a function *validate()* to validate the fields before sending the request to the server via AJAX
+The server responds to the request by displaying a welcome message with the registered email 
 
   
 
