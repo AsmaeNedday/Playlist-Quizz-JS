@@ -1,5 +1,6 @@
+# Playslist-Quizz-JS
 
-This project presents a Playlist and a Quizz using Javascript   
+This project presents a Playlist and a Quizz using Javascript  . 
 I worked with the principles of inheritance and prototypes .  
 My project is divided into four folders :  
   * __assets__ : includes all images i used in the project  
